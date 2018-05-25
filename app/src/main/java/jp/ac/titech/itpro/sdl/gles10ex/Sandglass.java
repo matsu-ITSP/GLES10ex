@@ -80,19 +80,19 @@ public class Sandglass implements SimpleRenderer.Obj {
         gl.glVertexPointer(3, GL10.GL_FLOAT, 0, vbuf);
 
         // left
-        gl.glNormal3f(-1, 0, 0);
+        gl.glNormal3f(-1, 0, 1);
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
 
         // right
-        gl.glNormal3f(1, 0, 0);
+        gl.glNormal3f(1, 0, 1);
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 4, 4);
 
         // bottom
-        gl.glNormal3f(0, -1, 0);
+        gl.glNormal3f(0, -1, 1);
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 8, 4);
 
         // top
-        gl.glNormal3f(0, 1, 0);
+        gl.glNormal3f(0, 1, 1);
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 12, 4);
 
         // rear
@@ -104,19 +104,19 @@ public class Sandglass implements SimpleRenderer.Obj {
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 20, 4);
 
         // left
-        gl.glNormal3f(-1, 0, 0);
+        gl.glNormal3f(-1, 0, -1);
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 24, 4);
 
         // right
-        gl.glNormal3f(1, 0, 0);
+        gl.glNormal3f(1, 0, -1);
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 28, 4);
 
         // bottom
-        gl.glNormal3f(0, -1, 0);
+        gl.glNormal3f(0, -1, -1);
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 32, 4);
 
         // top
-        gl.glNormal3f(0, 1, 0);
+        gl.glNormal3f(0, 1, -1);
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 36, 4);
 
         // rear
