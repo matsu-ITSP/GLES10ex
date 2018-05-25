@@ -10,4 +10,7 @@
     <item
         android:id="@+id/item_squareporl"
         android:title="Squareporl" />
+    <item
+        android:id="@+id/item_sandglass"
+        android:title="sandglass" />
 </menu>

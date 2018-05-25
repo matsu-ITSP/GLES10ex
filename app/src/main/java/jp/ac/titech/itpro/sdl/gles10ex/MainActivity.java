@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     private Cube cube;
     private Pyramid pyramid;
     private Squareporl squareporl;
+    private Sandglass sandglass;
 
 
     @Override
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         cube = new Cube();
         pyramid = new Pyramid();
         squareporl = new Squareporl();
+        sandglass = new Sandglass();
         renderer.setObj(cube, 0, 0, 0);
         glView.setRenderer(renderer);
     }
@@ -77,6 +79,9 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
                 break;
             case R.id.item_squareporl:
                 renderer.setObj(squareporl, 0, 0, 0);
+                break;
+            case R.id.item_sandglass:
+                renderer.setObj(sandglass, 0, 0, 0);
                 break;
         }
         return true;
